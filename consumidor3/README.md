@@ -6,10 +6,10 @@ Instalar kafka-python utilizando pip:
 
 ou
 
-    exec > exec > pip3 install kafka-python
+    exec > pip3 install kafka-python
 
 Executar script:
 
-    exec > python consumidor.py
-	ou
-    exec > python3 consumidor.py
+    $ python consumidor.py
+ou
+    $ python3 consumidor.py
