@@ -8,6 +8,6 @@ Instalar kafka-python utilizando pip:
 
 Executar script:
 
-    $ python consumidor.py
+    $ python consumidor3.py
     #ou
-    $ python3 consumidor.py
+    $ python3 consumidor3.py
