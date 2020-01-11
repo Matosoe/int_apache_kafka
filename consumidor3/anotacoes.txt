@@ -1,0 +1,35 @@
+#Utilizado kafta da aula para iniciar
+#Comandos para obter o kafta para teste inicial
+
+#Clonar repositório
+$ git clone https://github.com/confluentinc/cp-docker-images
+
+#Utilizaar exemplo kafka-single-node
+$ cd ~/cp-docker-images/examples/kafka-single-node/
+
+#Iniciar container
+$ docker-compose up -d
+
+
+#Comando para criar topico meu-primeiro-topic
+$ sudo docker-compose exec kafka kafka-topics --create --topic meu-primeiro-topic --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:2181
+
+#Comando para listar os topicos
+$ sudo docker-compose exec kafka kafka-topics --list --bootstrap-server localhost:9092
+
+#Comando para produtor do topico meu-primeiro-topic
+$ sudo docker-compose exec kafka kafka-console-producer -broker-list localhost:9092 --topic meu-primeiro-topic
+
+#Comando para consumidor, grupo consumidor3
+$ sudo docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:9092 --group consumidor3 --topic meu-primeiro-topic --from-beginning
+
+
+#Comando para listar os grupos
+$ sudo docker-compose exec kafka kafka-consumer-groups --bootstrap-server localhost:9092 --list
+
+--------------------
+
+
+#Comando para instalar kafka-python
+sudo pip install kafka-python
+sudo pip3 install kafka-python
