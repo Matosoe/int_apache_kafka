@@ -1,23 +1,17 @@
 from kafka import KafkaConsumer
 import sys
 
-# To consume latest messages and auto-commit offsets
-consumer = KafkaConsumer('meu-primeiro-topic',
-                         group_id='consumidor3',
+consumer = KafkaConsumer('bolsafamilia2',
+                         group_id='kafka-consumer-3',
                          bootstrap_servers=['localhost:9092'])
 
 counter = 0;
 
-# consume earliest available messages, don't commit offsets
+# consumir mensagens disponíveis
 KafkaConsumer(auto_offset_reset='earliest', enable_auto_commit=False)
 
 sys.stdout.write('\rQuantidade de mensagens lidas: %d' % counter)
 
 for message in consumer:
-    # message value and key are raw bytes -- decode if necessary!
-    # e.g., for unicode: `message.value.decode('utf-8')`
-    # print ("%s:%d:%d: key=%s value=%s" % (message.topic, message.partition,
-    #                                       message.offset, message.key,
-    #                                       message.value))
     counter = counter + 1
     sys.stdout.write('\rQuantidade de mensagens lidas: %d' % counter)
