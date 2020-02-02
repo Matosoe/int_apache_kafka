@@ -87,6 +87,7 @@ ou
 ## Integrantes
 * Eduardo Matoso
 * Bruno Gea
+* Diego Smagnotto
 * Felipe Silva
 * Fernanda Vedovello
 * Thiago Langoni
