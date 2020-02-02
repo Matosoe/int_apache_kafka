@@ -18,7 +18,27 @@
 ![Atividades Trello](./img/Trello.jpg)
 
 ## Produtor
-produtor
+
+O produtor tem como objetivo ler um arquivo CSV, para cada linha deste gravar uma mensagem no tópico.
+
+No projeto do produtor, existe um consumidor, mas este serve apenas para para acompanhamento no desenvolvimento e testes do produtor, não faz parte dos entregáveis do trabalho.
+
+Para montagem do ambiente com o Zookeeper e Kafka utilizar [este](https://towardsdatascience.com/running-zookeeper-kafka-on-windows-10-14fc70dcc771) totorial.
+
+Após Zookeeper e Kafka estarem em funcionamento, criar o tópico Kafka.
+
+```bash
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic bolsafamilia2
+```
+Utilizar o projeto da pasta produtor e executá-lo.
+
+Para solicitar a produção das mensagens, utilizar o Postman, um exemplo da chamada está na pasta postman do projeto.
+* O body da requisição é o caminho do arquivo CSV à ser lido.
+* Após a execução será exibida a seguinte mensagem:
+    * "Arquivo lido e colocado no tópico bolsafamilia"
+
+As mensagens que foram colocadas no tópico poderão ser verificadas no console, pois o consumidor exibe elas.
+
 
 ## Consumidor 1
 consumidor 1
@@ -30,6 +50,8 @@ consumidor 2
 Consumidor 3
 
 ## Integrantes
-A
-B
-C
+* Eduardo Matoso
+* Bruno Gea
+* Felipe Silva
+* Fernanda Vedovello
+* Thiago Langoni
