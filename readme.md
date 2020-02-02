@@ -15,7 +15,7 @@
 ![Visao Macro](./img/VisaoMacro.jpg)
 
 ## Atividades do Trello
-![Atividades Trello](./img/Trello.jpg)
+![Atividades Trello](./img/Trello.JPG)
 
 ## Produtor
 
@@ -48,7 +48,7 @@ Foi desenvolvido em .net core. É o projeto na pasta ConsumerKafka
 Necessario a configuração do kafka com nome de tópico bolsafamilia2
 
 Resultado da execução com arquivo contendo 10000 registros.
-![Resultado Consumidor 1](./img/ResultadoConsumidor1.jpg)
+![Resultado Consumidor 1](./img/ResultadoConsumidor1.JPG)
 
 
 ## Consumidor 2
