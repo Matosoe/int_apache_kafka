@@ -84,6 +84,7 @@ ou
     $ python3 consumidor3.py
 ```
 
+
 ## Integrantes
 * Eduardo Matoso
 * Bruno Gea
