@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "8edb587a-5b56-45c7-9399-3de5e1a01a9b",
+		"name": "BolsaFamília",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/bolsafamilia/resumos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "D:\\\\Trabalhos\\\\integration\\\\integration\\\\exemplos\\\\201901_BolsaFamilia_Pagamentos_1000.csv"
+				},
+				"url": {
+					"raw": "localhost:9090/bolsafamilia/resumos",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"bolsafamilia",
+						"resumos"
+					]
+				},
+				"description": "Solicitação de resumo dos pagamentos do bolsa família."
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
