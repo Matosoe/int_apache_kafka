@@ -65,6 +65,8 @@ Resultado da execução com arquivo contendo 10000 registros.
 ## Consumidor 3
 Tem como objetivo contar a quantidade de mensagens do tópico lidas até o momento.
 
+Foi desenvolvido em Python. É o projeto na pasta consumidor3
+
 Instalar kafka-python utilizando pip:
 ```bash
     $ pip install kafka-python
