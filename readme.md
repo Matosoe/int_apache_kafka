@@ -19,7 +19,7 @@
 
 ## Produtor
 
-O produtor tem como objetivo ler um arquivo CSV, para cada linha deste gravar uma mensagem no tópico.
+O produtor tem como objetivo ler um arquivo CSV, para cada linha deste gravar uma mensagem no tópico. Foi desenvolvido em Java.
 
 No projeto do produtor, existe um consumidor, mas este serve apenas para para acompanhamento no desenvolvimento e testes do produtor, não faz parte dos entregáveis do trabalho.
 
@@ -41,13 +41,46 @@ As mensagens que foram colocadas no tópico poderão ser verificadas no console,
 
 
 ## Consumidor 1
-consumidor 1
+Tem como objetivo exibir no console o resultado calculado para cada registro consultado do Topic. Desta forma, a quantidade de UF retornadas no console vai aumentar na medida que forem processados os registros dos beneficiários vinculados a novas UFs. 
+
+Foi desenvolvido em .net core. É o projeto na pasta ConsumerKafka
+
+Necessario a configuração do kafka com nome de tópico bolsafamilia2
+
+Resultado da execução com arquivo contendo 10000 registros.
+![Resultado Consumidor 1](./img/ResultadoConsumidor1.jpg)
+
 
 ## Consumidor 2
-consumidor 2
+Tem como objetivo mostrar no console a cada registro consultado do tópico, a maior parcela até o momento, com os dados:
+* NIS FAVORECIDO 
+* NOME FAVORECIDO 
+* VALOR PARCELA 
+* NOME MUNICIPIO 
+* UF  
+
+Resultado da execução com arquivo contendo 10000 registros.
+![Resultado Consumidor 1](./img/ResultadoConsumidor2.png)
 
 ## Consumidor 3
-Consumidor 3
+Tem como objetivo contar a quantidade de mensagens do tópico lidas até o momento.
+
+Instalar kafka-python utilizando pip:
+```bash
+    $ pip install kafka-python
+```
+ou
+```bash
+    $ pip3 install kafka-python
+```
+Executar script:
+```bash
+    $ python consumidor3.py
+```
+ou
+```bash
+    $ python3 consumidor3.py
+```
 
 ## Integrantes
 * Eduardo Matoso
