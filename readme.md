@@ -47,7 +47,7 @@ Foi desenvolvido em .net core. É o projeto na pasta ConsumerKafka
 
 Necessario a configuração do kafka com nome de tópico bolsafamilia2
 
-Resultado da execução com arquivo contendo 10000 registros.
+Resultado da execução com arquivo contendo 1000 registros.
 ![Resultado Consumidor 1](./img/ResultadoConsumidor1.JPG)
 
 
