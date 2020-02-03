@@ -84,7 +84,7 @@ ou
     $ python3 consumidor3.py
 ```
 
-Resultado da execução com arquivo contendo 10000 registros.
+Resultado da execução com arquivo contendo 1000 registros.
 ![Resultado Consumidor 3](./img/ResultadoConsumidor3.png)
 
 ## Integrantes
