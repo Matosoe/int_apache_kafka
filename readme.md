@@ -59,7 +59,7 @@ Tem como objetivo mostrar no console a cada registro consultado do tópico, a ma
 * NOME MUNICIPIO 
 * UF  
 
-Resultado da execução com arquivo contendo 10000 registros.
+Resultado da execução com arquivo contendo 1000 registros.
 ![Resultado Consumidor 2](./img/ResultadoConsumidor2.png)
 
 ## Consumidor 3
