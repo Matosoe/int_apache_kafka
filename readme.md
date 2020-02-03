@@ -60,7 +60,7 @@ Tem como objetivo mostrar no console a cada registro consultado do tópico, a ma
 * UF  
 
 Resultado da execução com arquivo contendo 10000 registros.
-![Resultado Consumidor 1](./img/ResultadoConsumidor2.png)
+![Resultado Consumidor 2](./img/ResultadoConsumidor2.png)
 
 ## Consumidor 3
 Tem como objetivo contar a quantidade de mensagens do tópico lidas até o momento.
@@ -84,6 +84,8 @@ ou
     $ python3 consumidor3.py
 ```
 
+Resultado da execução com arquivo contendo 10000 registros.
+![Resultado Consumidor 3](./img/ResultadoConsumidor3.png)
 
 ## Integrantes
 * Eduardo Matoso
